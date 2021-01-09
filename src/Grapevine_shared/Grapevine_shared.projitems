@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>0daa1b74-9491-4ddf-8d21-0d44c739a07f</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Grapevine_shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Client\PathParams.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Client\QueryString.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Client\RestClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Client\RestRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Client\RestResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\Client\ClientStateException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\Server\DynamicValueNotFoundException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\Server\InvalidRouteMethodException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\Server\NotFoundException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\Server\ServerStateException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\Server\UnableToStartHostException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Exceptions\Server\UnableToStopHostException.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Server\HttpContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Server\HttpRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Server\HttpResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Server\IHttpListener.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Server\IHttpListenerContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Shared\IGrapevineLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Attributes\RestResource.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Attributes\RestRoute.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\HttpResponseExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\PublicFolder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\RestCluster.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\RestServer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Route.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\Router.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\RouteScanner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Server\ServerSettings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\ContentType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\DynamicProperties.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\HttpMethod.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\HttpStatusCode.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\InternalExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\Loggers\ConsoleLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\Loggers\InMemoryLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\Loggers\LoggerExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\Loggers\NullLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\NameValueCollectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\ParamParser.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\PortFinder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\StreamExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\UriScheme.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Shared\UriSchemeExtensions.cs" />
+  </ItemGroup>
+</Project>

@@ -1,17 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.329
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grapevine", "Grapevine\Grapevine.csproj", "{421A7BB5-6B14-4543-988B-A7AD6EB3DBFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grapevine", "Grapevine\Grapevine.csproj", "{421A7BB5-6B14-4543-988B-A7AD6EB3DBFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grapevine.Local", "Grapevine.Local\Grapevine.Local.csproj", "{D06FFE34-889F-4CA7-A874-D333BD2DBF9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grapevine.Local", "Grapevine.Local\Grapevine.Local.csproj", "{D06FFE34-889F-4CA7-A874-D333BD2DBF9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grapevine.Tests", "Grapevine.Tests\Grapevine.Tests.csproj", "{92CD1A59-D76B-43F9-ADCF-D40C2FD07385}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grapevine.Tests", "Grapevine.Tests\Grapevine.Tests.csproj", "{92CD1A59-D76B-43F9-ADCF-D40C2FD07385}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grapevine.Tests.Assembly", "Grapevine.Tests.Assembly\Grapevine.Tests.Assembly.csproj", "{3E45323B-6735-477B-95C3-A8096EE5A5F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Grapevine.Tests.Assembly", "Grapevine.Tests.Assembly\Grapevine.Tests.Assembly.csproj", "{3E45323B-6735-477B-95C3-A8096EE5A5F8}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Grapevine_shared", "Grapevine_shared\Grapevine_shared.shproj", "{0DAA1B74-9491-4DDF-8D21-0D44C739A07F}"
 EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Grapevine_shared\Grapevine_shared.projitems*{0daa1b74-9491-4ddf-8d21-0d44c739a07f}*SharedItemsImports = 13
+		Grapevine_shared\Grapevine_shared.projitems*{421a7bb5-6b14-4543-988b-a7ad6eb3dbff}*SharedItemsImports = 5
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
