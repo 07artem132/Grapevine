@@ -48,6 +48,10 @@
     </AssemblyAttribute>
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
   <Import Project="..\Grapevine_shared\Grapevine_shared.projitems" Label="Shared" />
 
 </Project>

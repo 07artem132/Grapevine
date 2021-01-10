@@ -5,6 +5,8 @@ using System.Text;
 using Grapevine.Interfaces.Server;
 using Grapevine.Interfaces.Shared;
 using Grapevine.Shared;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using HttpStatusCode = Grapevine.Shared.HttpStatusCode;
 
 namespace Grapevine.Server
@@ -179,6 +181,25 @@ namespace Grapevine.Server
                 : stream.GetBinaryBytes();
 
             response.SendResponse(buffer);
+        }
+
+        static JsonSerializerSettings jsonSettings = new JsonSerializerSettings()
+        {
+            ContractResolver = new CamelCasePropertyNamesContractResolver()
+        };
+
+        public static void SendResponse(this IHttpResponse response, object obj, HttpStatusCode code = HttpStatusCode.Ok, JsonSerializerSettings serializerSettings = null)
+        {
+            response.ContentType = ContentType.JSON;
+            response.ContentEncoding = Encoding.UTF8;
+            response.StatusCode = code;
+
+            response.SendResponse(
+                response.ContentEncoding.GetBytes(
+                    JsonConvert.SerializeObject(
+                        obj, 
+                        serializerSettings == null ? jsonSettings : serializerSettings
+                        )));
         }
 
         public static void TrySendResponse(this IHttpResponse response, IGrapevineLogger logger, HttpStatusCode status, Exception e = null)
