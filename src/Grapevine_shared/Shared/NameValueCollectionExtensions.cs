@@ -38,7 +38,7 @@ namespace Grapevine.Shared
         {
             try
             {
-                return collection.GetValue<T>(key);
+                return collection.GetValue<T>( key);
             }
             catch(Exception)
             {

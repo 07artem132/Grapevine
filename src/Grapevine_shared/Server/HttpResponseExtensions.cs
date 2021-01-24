@@ -7,7 +7,6 @@ using Grapevine.Interfaces.Shared;
 using Grapevine.Shared;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
-using HttpStatusCode = Grapevine.Shared.HttpStatusCode;
 
 namespace Grapevine.Server
 {

@@ -27,8 +27,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Server\IHttpListener.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Server\IHttpListenerContext.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\Shared\IGrapevineLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomLogger\GrapevineLogger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Middleware\ApiAnalitics.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Middleware\ApiAuth.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Response\ErrorResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Response\SucessResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ServerApiController.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Server\Attributes\RestResource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Server\Attributes\RestRoute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Server\HttpResponseExtensions.cs" />
